@@ -25,6 +25,19 @@ const app::GameInfo app::kGame = {
     .ui = nullptr,                        // ImGui drawing each frame
     .pad = kfc::DevPad,                   // changes a polled pad (local test input)
     .rumble = nullptr,                    // changes a rumble before it is set
-    .version = "0.1.0",                   // the options menu header
+    // keyboard play, rebound in the settings menu; the controller layout is the game's configuration A
+    .keys = {{"up", "Move up / menu up", "W, Up"},
+             {"down", "Move down / menu down", "S, Down"},
+             {"left", "Move left", "A, Left"},
+             {"right", "Move right", "D, Right"},
+             {"a", "Jump / accept", "Space, Enter"},
+             {"x", "Attack", "J"},
+             {"y", "Fast attack", "I"},
+             {"b", "Grab, trip, throw / back", "K, Backspace"},
+             {"rt", "Block", "L, Left Shift"},
+             {"lt", "Taunt", "T"},
+             {"start", "Pause", "Esc"}},
+    .version = "0.1.1",                   // the options menu header
     .tier = "alpha",                      // alpha, beta or complete
+    .widescreen = false,                  // made for 4:3: widescreen through the toolkit's hack
 };
