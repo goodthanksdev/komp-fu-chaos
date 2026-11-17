@@ -1,0 +1,11 @@
+{
+  "name": "Kung Fu Chaos",
+  "project": "Komp Fu Chaos",
+  "console": "xbox",
+  "consoleName": "Xbox",
+  "tier": "alpha",
+  "needs": "Kung Fu Chaos (Xbox) disc image",
+  "year": 2003,
+  "romDir": "assets",
+  "exe": "KungFuChaos.exe"
+}
